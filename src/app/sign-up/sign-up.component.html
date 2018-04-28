@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-9 col-sm-offset-1 col-md-offset-2">
+      <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <div id="user-data">
+          <div class="form-group row">
+            <label for="username"  class="col-sm-2  col-form-label" >Username</label>
+            <input type="text"
+             id="username" 
+             class="form-control col-xs-8 col-sm-6 "
+             ngModel
+          name="name"
+          required>
+          </div>
+      
+          <div class="form-group row">
+            <label for="email"  class="col-sm-2  col-form-label">Mail</label>
+            <input type="email"
+             id="email" 
+             class="form-control  col-xs-8 col-sm-6 "
+             ngModel
+          name="Email"
+          required
+          email
+          #email="ngModel">
+          <span class="help-control" *ngIf="!email.valid && email.touched">please enter a valid mail</span>
+          </div>
+        </div>
+       
+      <div class="form-group row">
+        <label for="exampleInputPassword1"  class="col-sm-2  col-form-label">Password</label>
+        <input type="password" class="form-control  col-xs-8 col-sm-6 "
+         id="exampleInputPassword1" 
+         placeholder="Password"
+         ngModel
+          name="password"
+          required>
+      </div>
+      <div class="form-group row">
+        <label for="RPassword"  class="col-sm-2  col-form-label">Password</label>
+        <input type="password" class="form-control  col-xs-8 col-sm-6 "
+         id="RPassword" 
+         placeholder=" Retype Password"
+         ngModel
+          name="password">
+      </div>
+      <div class="form-group row">
+        <label for="exampleFormControlTextarea1"  class="col-sm-2  col-form-label">Address</label>
+        <textarea class="form-control  col-xs-8 col-sm-6 "
+         id="exampleFormControlTextarea1" 
+         rows="3"
+         required
+         ngModel
+         name="address"></textarea>
+      </div>
+      <div class="form-group row" *ngIf="seller" >
+            <label for="NationalId"  class="col-sm-2  col-form-label" >National Id</label>
+            <input type="text"
+             id="NationalId" 
+             class="form-control col-xs-8 col-sm-6 "
+             ngModel
+          name="NationalId"
+          required>
+          </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1"
+        ngModel
+          name="agree"
+          required>
+        <label class="form-check-label" for="exampleCheck1" >I agree on the <a href="#">Terms of Use </a>and
+          <a href="#"> Policy of Privacy</a>
+
+        </label>
+      </div>
+     
+        <div class="form-group row" *ngIf="!seller" >
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <div class="row ">
+        <button class="btn btn-primary " type="submit"
+        [disabled]="!form.valid">Sign Up</button>
+        <p *ngIf="!seller">Want to be a Seller ?<a href="#"(click)="sellerMode()"> Sell With Us Now.</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
