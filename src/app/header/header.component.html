@@ -1,17 +1,15 @@
+<div class="row w-100 p-3"  [style.padding-left.%]="width ? '15' : '0'"  >
+  <nav class="navbar navbar-light "  >
+    <row>
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <div class="row w-100 p-3"  [style.padding-left.%]="width ? '15' : '0'" >
-
-    <nav class="navbar navbar-light "  >
-         <div class="container" style="padding-left:5px;margin-left:3%;">
-              <div class="pull-xs-left" style="margin-right: 2%;font-size:30px;cursor:pointer;margin-top:0.5%" (click)="openNav()">
+         <div class="container col-md-12" style="padding-left:5px;margin-left:3%;">
+              <div class="pull-xs-left col-md-2" style="margin-right: 2%;font-size:30px;cursor:pointer;margin-top:0.5%;float:left" (click)="openNav()">
                 &#9776;
               </div>
+              <div class="col-md-7">
               <a class="navbar-brand" routerLink="/"> SOUQ </a>
               <a href="#myPage" ><img src="assets/imgs/logo.png"  style="float: left;" width="70px" height="50px"></a>
-              
+
                 <form class="navbar-form" role="search" style="float: left; margin-left: 15%">
                     <div class="input-group  col-lg-12 add-on">
                       <input class="form-control " placeholder="Search" name="srch-term" id="srch-term" type="text">
@@ -20,23 +18,16 @@
                       </div>
                     </div>
                   </form>
-                
-          <ul class="nav navbar-nav pull-xs-right" style="position: relative;">
-              <li>
+            </div>
+                  <ul class=" col-md-3 nav navbar-nav pull-xs-right">
 
-              </li>
-                <li>
-                <a 
-                  routerLink="/">
-                  Home
-                </a>
-              </li>
-              <li>
-                 <a class="navbar-brand"  href="#myPage">Yasmine</a>
-              </li>
-             <a><img src="assets/imgs/shop.png" width="50px" height="50px" style=""/></a>
-            </ul>
-           
+                      <li>
+                         <a class="navbar-brand"  href="#myPage">Yasmine</a>
+                      </li>
+                     <a><img src="assets/imgs/shop.png" width="50px" height="50px" style=""/></a>
+                    </ul>
+
           </div>
+        </row>
         </nav>
       </div>

@@ -7,5 +7,6 @@ export class SideBarToggleService {
   @Output() toggleSidebar: EventEmitter<any> = new EventEmitter();
   toggleSideBar(){
     this.toggleSidebar.emit();
+    console.log("service done");
   }
 }

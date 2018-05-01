@@ -19,7 +19,8 @@ export class HeaderComponent implements OnInit {
     else{
       this.width=true
     }
+    console.log("width"+this.width);
     this.sideService.toggleSideBar();
   }
- 
+
 }
