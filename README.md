@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 7ff0aac9c28024601ed8bc17d541803640e85bf3
 # Souq
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
@@ -29,10 +25,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-<<<<<<< HEAD
->>>>>>> 7ff0aac9c28024601ed8bc17d541803640e85bf3
-=======
-=======
-# Souq
->>>>>>> c2bd2cd2bb910acd5e296380b31230a37b5c55c2
->>>>>>> 7ff0aac9c28024601ed8bc17d541803640e85bf3
