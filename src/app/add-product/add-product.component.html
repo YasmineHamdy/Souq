@@ -1,0 +1,75 @@
+
+<div class="container" style="width:50%">
+
+<div class="modal-content" >
+<div class="modal-body">
+  <div class="row">
+  	<div class="col-md-12">
+          <form class="form-horizontal"  (ngSubmit)="onSubmit(form)" #form="ngForm">
+         
+            <div id="legend">
+              <legend class="">Add Product</legend>
+            </div>
+            <div class="row">
+              <img src="assets/imgs/placeholder.png" style="display: block;margin-left: auto;margin-right: auto;
+              width:30%;height:30%"/>
+            </div>
+            <div class="row col-md-3">
+              <label class="control-label">Product Name</label>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <input id="productName" name="productName" placeholder="" class="form-control input-md" type="text" ngModel required >
+               
+                <br/>
+              </div>
+            </div>
+            <div class="row col-md-3">
+              <label class="control-label">Product Price</label>
+            </div>
+             <div class="row ">
+               <div class="col-md-8 ">
+                <input id="productPrice" name="productPrice" placeholder="" class="form-control input-md" type="number" ngModel  required >
+                <br/>
+              </div>
+            </div>
+            <div class="row col-md-3">
+              <label class="control-label">Product Pcs</label>
+            </div>
+             <div class="row ">
+              <div class="col-md-8 ">
+                <input id="productPcs" name="productPcs" placeholder="" class="form-control input-md" type="number"  ngModel required>
+                <br/>
+              </div>
+            </div>
+            <div class="row col-md-3">
+              <label class="control-label">Product Desc</label>
+            </div>
+           <div class="row ">
+             <div class="col-md-8">
+                <textarea id="productDesc" name="productDesc" placeholder="" class="form-control input-md"  ngModel required></textarea>
+                <br/>
+              </div>
+            </div>
+            <div class="row col-md-3">
+              <label class="control-label">Upload Photo</label>
+            </div>
+           
+              <div class="row col-md-8">
+                <a href="#" >
+                  <span class="glyphicon glyphicon-plus"></span>
+                </a>
+              </div>
+            
+           
+              <div class="pull-xs-right" >
+                <button type="submit"  class="btn btn-success"  [disabled]="!form.valid" >Add</button>
+              </div>
+        
+        </form>
+    
+    </div> 
+  </div>
+</div>
+</div>
+</div>
