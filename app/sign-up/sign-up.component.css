@@ -1,0 +1,18 @@
+.container{
+
+    margin-top: 2%;
+}
+div.form-group {
+    margin: 1%;
+    padding:1%;
+
+}
+input.ng-invalid.ng-touched{
+
+    border :1px solid red;
+}
+p{
+    margin-left: 4%;
+    margin-top: 1%;
+
+}

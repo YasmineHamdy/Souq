@@ -1,0 +1,9 @@
+<div>
+  <details *ngFor="let category of categories">
+    <summary>{{category}}</summary>
+    <div *ngFor="let sub of subcategories">
+      <a *ngIf="sub.Parent==category">{{sub.Name}}</a>
+    </div>
+    <a></a>
+  </details>
+</div>
