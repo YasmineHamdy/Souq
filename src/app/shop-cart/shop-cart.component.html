@@ -1,0 +1,17 @@
+<ul *ngFor="let product of myProducts">
+  <li>
+<div>
+  <div><span><img src="assets/imgs/x.png" width="50px" height="50px" [ngStyle]="{'float':'right'}" id="{{product.productTitle}}" (click)="deleteFunction($event)">
+  <p [ngStyle]="{'float':'left'
+  ,'font-weight':'bold'}">
+    {{product.productTitle}}
+  </p></span>
+<br/></div>
+<img src="{{product.img}}" width="50px" height="50px">
+  <p>rate:{{product.rate}}</p>
+  <p>price:{{product.price}}</p>
+</div>
+</li>
+</ul>
+<div>Total:{{total}} </div>
+<button (click)="checkoutFunction($event)">check out</button>

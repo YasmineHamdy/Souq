@@ -1,0 +1,17 @@
+<div>
+ 
+    <h1 [ngStyle]="{'float':'rigth'}">{{thisProduct.Pname}}</h1>
+    <span><img src="{{thisProduct.imagepath}}" [ngStyle]="{'float':'left'}" height="100px" width="100px">
+          <p>{{thisProduct.rate}}</p>
+          <p *ngFor="let r of thisProduct.reviews">{{r}}</p>
+          <p>{{thisProduct.description}}</p>
+          <p>price: {{thisProduct.Price}}</p>
+          <a href="#">{{thisProduct.seller}}</a>
+    </span>
+    <button (click)="addToCartFunction($event)">
+      Add to cart</button>
+
+
+ 
+  
+</div>
